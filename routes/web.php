@@ -31,4 +31,15 @@ Route::get("/employee", [EmployeeController::class, 'index']);
 
 Route::get("/leave", [LeaveController::class, 'index']);
 
-Route::get("/stock", [StockController::class, 'index']);        
+Route::get("/stock", [StockController::class, 'index']);    
+
+
+Route::get("/vacancies", function () {
+    return view("vacancies");
+});
+Route::get("/about-us", function () {
+    return view("about-us");
+});
+Route::get("/mission", function () {
+    return view("mission");
+});

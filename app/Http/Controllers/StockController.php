@@ -25,6 +25,6 @@ class StockController extends Controller
                 "Stock" => 100
             ],
         ];
-        return view('Stock',['StockArr' => $StockArr]);
+        return view('Stock', ['StockArr' => $StockArr]);
     }
 }
